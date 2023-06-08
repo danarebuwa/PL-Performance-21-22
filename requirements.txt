@@ -1,0 +1,9 @@
+streamlit==1.8.1
+pandas
+numpy
+sklearn
+matplotlib
+seaborn
+mplsoccer
+plotly 
+math
