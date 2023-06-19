@@ -144,7 +144,7 @@ pl_misc['Pos'] = pl_misc['Pos'].str[:2]
 
 #merge the following dataframes pl_df, pl_pass, pl_poss, pl_def, pl_sca_gca
 pl_df = pd.merge(pl_df, pl_pass, on='Player')
-pl_df = pl_df.drop(columns=['Matches_x', 'Matches_y', 'Rk_y', 'Nation_y', 'Pos_y', 'Squad_y', 'Age_y', 'Born_y', '90s_y','Rk_x', 'Nation_x', 'Pos_x', 'Squad_x', 'Age_x', 'Born_x', '90s_x', 'Gls.1','Ast.1','Ast_y','Matches_y','Matches_x','xA_x','xG.1','xA.1','Att_x','xA_y'])
+pl_df = pl_df.drop(columns=['Matches_x', 'Matches_y', 'Rk_y', 'Nation_y', 'Pos_y', 'Squad_y', 'Age_y', 'Born_y', '90s_y','Rk_x', 'Nation_x', 'Pos_x', 'Squad_x', 'Age_x', 'Born_x', '90s_x', 'Gls.1','Ast.1','Ast_y','Matches_y','Matches_x','xA_x','xG.1','xA.1','xA_y'])
 pl_df = pd.merge(pl_df, pl_poss, on='Player')
 pl_df = pl_df.drop(columns=['Matches_x', 'Matches_y', 'Rk_y', 'Nation_y', 'Pos_y', 'Squad_y', 'Age_y', 'Born_y', '90s_y','Rk_x', 'Nation_x', 'Pos_x', 'Squad_x', 'Age_x', 'Born_x', '90s_x', 'Gls.1','Ast.1','Ast_y', 'Ast_x','Matches','Matches_y','Matches_x','xA_x','xG.1','xA.1','Att_x','TotDist_x','PrgDist_x','xA_y','1/3_x','Prog_x'])
 pl_df = pd.merge(pl_df, pl_def, on='Player')
